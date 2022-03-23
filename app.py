@@ -13,6 +13,11 @@ def hello_world():
 def about_page(username):
     return f'<h1>This is the about page of {username}</h1>'
 
+@app.route('/register')
+def register_page():
+    return '<h2>Enter the details for filling</h2>'
+
+
 
 if __name__ == '__main__':
     app.run()
